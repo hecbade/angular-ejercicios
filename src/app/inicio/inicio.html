@@ -1,0 +1,16 @@
+<main class="contenedor">
+  <header class="cabecera">
+    <h1>Mis ejercicios</h1>
+    <p>{{ ejercicios.length }} ejercicios de Angular</p>
+  </header>
+
+  <section class="grid">
+    @for (e of ejercicios; track e.ruta; let i = $index) {
+      <a class="tarjeta" [routerLink]="'/' + e.ruta">
+        <span class="numero">{{ (i + 1).toString().padStart(2, '0') }}</span>
+        <span class="titulo">{{ e.titulo }}</span>
+        <span class="flecha">→</span>
+      </a>
+    }
+  </section>
+</main>
