@@ -1,0 +1,25 @@
+<p>2 componentes. Padre-Hijo
+
+C. Padre: Contiene tres arrays con los datos de 9 productos a comprar. ArrayNombres[], ArrayStock[], ArrayPrecios[]
+
+Una imagen de un carrito debajo de cada producto para añadir al carrito C.Hijo.
+
+C.Hijo: Simula el carrito, de forma que nos muestra el total de productos añadidos desde el padre y el total económico. También tiene un botón que al pulsarlo aparece en el padre el total de productos que se han añadido.</p>
+
+@for (nombre of ArrayNombres; track $index) {
+  <div>
+    <p>{{ nombre }}</p>
+    <p>Stock: {{ ArrayStock[$index] }}</p>
+    <p>Precio: {{ ArrayPrecios[$index] }} €</p>
+     <button (click)="carrito($index)">
+    <img
+    src="assets/descarga.png"
+    width="120"
+    height="100">
+    <br>
+
+    Añadir al carrito
+    </button>
+        <br>    <br>
+  </div>
+}
