@@ -1,0 +1,6 @@
+<h2>Ejercicio 14</h2>
+
+<p>14. Dos componentes izq, y der. El compomente Izq tiene una caja de texto que recoge palabras y las va metiendo en un array. El componente der va mostrando el array cada vez que se introduce una palabra nueva.</p>
+
+<app-derecha [palabras]="nombre"></app-derecha>
+<app-izquierda (palabraAgregada)="recibirPalabras($event)"></app-izquierda>
