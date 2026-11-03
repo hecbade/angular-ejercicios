@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-
+import { Hijo } from '../hijo/hijo';
 @Component({
-  imports: [],
+  imports: [Hijo],
   selector: 'app-padre',
   styleUrl: './padre.css',
   templateUrl: './padre.html',
@@ -19,13 +19,13 @@ ArrayNombres: string[] = [
   'Producto_8',
   'Producto_9'
 ];
-
+nombre = '';
 ArrayStock: number[] = [10, 10, 10, 10, 10, 10, 10, 10, 10];
 
 ArrayPrecios: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   carrito(pos:number) : void {
-  
+  this.nombre = this.ArrayNombres[pos];
   }
 
 }

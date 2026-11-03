@@ -8,9 +8,9 @@ C.Hijo: Simula el carrito, de forma que nos muestra el total de productos añadi
 
 @for (nombre of ArrayNombres; track $index) {
   <div>
-    <p>{{ nombre }}</p>
-    <p>Stock: {{ ArrayStock[$index] }}</p>
-    <p>Precio: {{ ArrayPrecios[$index] }} €</p>
+    <p>{{nombre }}</p>
+    <p>Stock: {{ArrayStock[$index] }}</p>
+    <p>Precio: {{ArrayPrecios[$index] }} €</p>
      <button (click)="carrito($index)">
     <img
     src="assets/descarga.png"
@@ -22,4 +22,8 @@ C.Hijo: Simula el carrito, de forma que nos muestra el total de productos añadi
     </button>
         <br>    <br>
   </div>
+
+
 }
+
+<app-hijo [nombreproducto]="nombre"></app-hijo>

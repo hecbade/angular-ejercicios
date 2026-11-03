@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   imports: [],
@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './hijo.css',
   templateUrl: './hijo.html',
 })
-export class Hijo {}
+export class Hijo {
+  @Input() nombreproducto: string = '';
+
+  ArrayNombres: string[] = [''];
+
+  ngOnChanges(){
+    if (this.nombreproducto != '') {
+      this.ArrayNombres.push(this.nombreproducto);
+    }
+  }
+}
