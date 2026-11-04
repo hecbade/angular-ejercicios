@@ -10,14 +10,16 @@ export const EJERCICIOS = [
     cargar: () => import('./ejercicio-14/ejercicio-14').then((m) => m.Ejercicio14),
   },
   {
-<<<<<<< Updated upstream
     ruta: 'ejercicio-17',
     titulo: 'Ejercicio 17',
     cargar: () => import('./ejercicio-17/ejercicio-17').then((m) => m.Ejercicio17),
   },
   {
-=======
->>>>>>> Stashed changes
+    ruta: 'ejercicio-18',
+    titulo: 'Ejercicio 18',
+    cargar: () => import('./ejercicio-18/ejercicio-18').then((m) => m.Ejercicio18),
+  },
+  {
     ruta: 'ejercicio-19',
     titulo: 'Ejercicio 19',
     cargar: () => import('./ejercicio-19/ejercicio-19').then((m) => m.Ejercicio19),
