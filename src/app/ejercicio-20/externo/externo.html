@@ -1,4 +1,9 @@
-<input type="text">
-<button>
-Cambio de color
-</button>
+<div [style.backgroundColor] = "actual_ext">
+
+@if(turno){
+  <input type="text" [(ngModel)]="nuevo_color">
+  <button (click)="cambiarColor()">Cambiar Color</button>
+}
+<p>Componente interno</p>
+<app-interno [color_recibido]="actual_int" [turno_recibido]="turno"  (cambiarColor)="recibirColor($event)"></app-interno>
+</div>

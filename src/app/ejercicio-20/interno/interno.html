@@ -1,1 +1,10 @@
-<p>interno works!</p>
+<div [style.backgroundColor] = "color_recibido">
+
+@if(!turno_recibido){
+  <input type="text"[(ngModel)]="nuevoColorInterno" >
+  <button (click)="enviarcolor()" >Cambiar Color</button>
+}
+
+
+</div>
+

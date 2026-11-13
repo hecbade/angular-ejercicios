@@ -24,4 +24,14 @@ export const EJERCICIOS = [
     titulo: 'Ejercicio 19',
     cargar: () => import('./ejercicio-19/ejercicio-19').then((m) => m.Ejercicio19),
   },
+  {
+    ruta: 'ejercicio-20',
+    titulo: 'Ejercicio 20',
+    cargar: () => import('./ejercicio-20/ejercicio-20').then((m) => m.Ejercicio20),
+  },
+  {
+    ruta: 'ejercicio-adicional',
+    titulo: 'Adicional',
+    cargar: () => import('./adicional/adicional').then((m) => m.Adicional),
+  },
 ];

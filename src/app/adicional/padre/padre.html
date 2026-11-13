@@ -1,1 +1,8 @@
-<p>padre works!</p>
+
+@for (equipo of equiposa; track $index) {
+      <button (click)="comparar(equipopadre)">
+        {{ equipopadre }}
+    </button>
+    <app-hijo [equiporecibido]="equiposa"></app-hijo>
+}
+
