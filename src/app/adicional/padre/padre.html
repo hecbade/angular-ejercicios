@@ -1,8 +1,5 @@
+<br><br>
+<app-hijo #hijo [equiporecibido]="equiposa"></app-hijo>
+<button (click)="comparar(hijo.equiposb)">Comparar equipo</button>
 
-@for (equipo of equiposa; track $index) {
-      <button (click)="comparar(equipopadre)">
-        {{ equipopadre }}
-    </button>
-    <app-hijo [equiporecibido]="equiposa"></app-hijo>
-}
 
